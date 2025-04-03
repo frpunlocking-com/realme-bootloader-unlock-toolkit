@@ -13,8 +13,8 @@ Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](h
 - [🖧 Realme Server Response Codes Explained](#️realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
-  - [Code 200](#code-200)
-  - [Reply with timestamp](#reply-with-timestamp)
+  - [Code 200 - Success](#code--200-Success)
+  - [Timestamp-Based Outpot](#timestamp-based-outpot)
 - [🔐 Security Note](#️-security-note)
 - [🧠 Reference](#️-reference)
 
@@ -146,7 +146,7 @@ to complete the unlock process.
 
 ### 🕒
 
-### Timestamp-Based Unlock Window
+### Timestamp-Based Outpot
 
 Some server responses may contain a **UNIX timestamp**, indicating when the device is eligible for unlocking.
 
