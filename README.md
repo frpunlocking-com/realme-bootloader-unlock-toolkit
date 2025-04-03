@@ -8,7 +8,7 @@ Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](h
 - [🛠 Requirements](#️-requirements)
   - [Virtual Environment (Recommended)](#virtual-environment-recommended)
 - [🚀 Usage](#️-usage)
-- [🖧 Explanation of Replies from Realme Severs](#️-explanation-of-replies-from-realme-severs)
+- [🖧 Realme Server Response Codes Explained](#️-realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
   - [Code 200](#code-200)
@@ -77,46 +77,66 @@ python send.py
 
 Make sure to configure your webhook URL and keys appropriately in the script or via environment variables (future version).
 
-## 🖧 Explanation of Replies from Realme Severs
+## 🖧 Realme Server Response Codes Explained
 
-It looks like the server responded with the following JSON message:
+When submitting your unlock request or parsing `bl.txt` output, you may encounter server responses like the following:
 
-### Code -1008
+### 🔁 Code `-1008`
 
 ```json
 {"code": -1008, "message": "未提交申请，请先提交解锁申请"}
 ```
 
-Translated from Chinese, the message says:
+**Translation:**  
+*No application submitted. Please submit an unlock request first.*
 
-“No application submitted. Please submit an unlock request first.”
+**Resolution:**  
+Make sure you have submitted your unlock application in the **Deeptest GT5 app** and generated logs via ADB.  
+👉 [See full guide here](https://frpunlocking.com/how-to-unlock-bootloader-of-a-realme-device/)
 
-Resolution: [submit in DeepTest GT5 with ADB like on this post](https://frpunlocking.com/how-to-unlock-bootloader-of-a-realme-device/).
+---
 
-### Code -1003
-
-The error message you've encountered:
-
-```json
-复制
-{"code":-1003,"message":"申请不成功，30天内不能重复申请"}
-```
-
-translates to: "Application unsuccessful; cannot reapply within 30 days."
-
-Resolution: change the HeyTap account or make a new one.
-
-### Code 200
+### ⛔ Code `-1003`
 
 ```json
-Decoded response: {"code":200,"message":"SUCCESS","data":{"unlockCode":"lot-of-chars"}}
+{"code": -1003, "message": "申请不成功，30天内不能重复申请"}
 ```
 
-On `unlockCode` there was received an unlock bootloader code.
+**Translation:**  
+*Application unsuccessful. You cannot apply again within 30 days.*
 
-### Reply with timestamp
+**Resolution:**  
+Wait 30 days or use a **different HeyTap account** to retry the unlock process.
 
-On that Unix timestamp Bootloader should be able to get unlock code.
+---
+
+### ✅ Code `200` – Success
+
+```json
+{"code": 200, "message": "SUCCESS", "data": {"unlockCode": "your-unlock-key"}}
+```
+
+**Meaning:**  
+The unlock key has been successfully issued. The `unlockCode` contains the full bootloader unlock token.
+
+**Next step:**  
+Use this key with:
+
+```bash
+fastboot flashing unlock
+```
+
+to complete the unlock process.
+
+---
+
+### 🕒 Timestamp-Based Unlock Window
+
+Some server responses may contain a **UNIX timestamp**, indicating when the device is eligible for unlocking.
+
+**Interpretation:**  
+This marks the expected time after which the bootloader can be safely unlocked.  
+Use tools like [unixtimestamp.com](https://www.unixtimestamp.com/) to convert it to a human-readable format.
 
 ## 🔐 Security Note
 
