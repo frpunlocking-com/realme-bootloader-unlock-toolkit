@@ -104,7 +104,7 @@ The error message you've encountered:
 
 translates to: "Application unsuccessful; cannot reapply within 30 days."
 
-Resolution: change HeyTap account or make new one.
+Resolution: change the HeyTap account or make a new one.
 
 ### Code 200
 
@@ -112,7 +112,7 @@ Resolution: change HeyTap account or make new one.
 Decoded response: {"code":200,"message":"SUCCESS","data":{"unlockCode":"lot-of-chars"}}
 ```
 
-On `nlockCode` there was receivied an unlock bootloader code.
+On `unlockCode` there was received an unlock bootloader code.
 
 ### Reply with timestamp
 
