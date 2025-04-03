@@ -1,14 +1,16 @@
-# 🔓 Realme Bootloader Unlock Toolkit to save unlock key
+# Realme Bootloader Unlock Toolkit to save unlock key
+
+## 🔓
 
 Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](https://frpunlocking.com).
 
 ## 📚 Table of Contents
 
-- [🔓 Realme Bootloader Unlock Toolkit to save unlock key](#️-realme-bootloader-unlock-toolkit-to-save-unlock-key)
-- [🛠 Requirements](#️-requirements)
+- [🔓 Realme Bootloader Unlock Toolkit to save unlock key](#️realme-bootloader-unlock-toolkit-to-save-unlock-key)
+- [🛠 Requirements](#️requirements)
   - [Virtual Environment (Recommended)](#virtual-environment-recommended)
-- [🚀 Usage](#️-usage)
-- [🖧 Realme Server Response Codes Explained](#️-realme-server-response-codes-explained)
+- [🚀 Usage](#️usage)
+- [🖧 Realme Server Response Codes Explained](#️realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
   - [Code 200](#code-200)
@@ -16,7 +18,9 @@ Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](h
 - [🔐 Security Note](#️-security-note)
 - [🧠 Reference](#️-reference)
 
-## 🛠 Requirements
+## 🛠
+
+## Requirements
 
 Before running the script, make sure you have Python 3.8+ installed. You can install the required dependencies using:
 
@@ -61,7 +65,9 @@ python send.py
 
 This way, your dependencies remain isolated to that specific virtual environment, and you don’t need to manually insert paths.
 
-## 🚀 Usage
+## 🚀
+
+## Usage
 
 After capturing the ADB log output (`bl.txt`) when apply with [Realme Deeptest GT5 APK](https://frpunlocking.com/diy-unlock/realme-bootloader-unlock/) using:
 
@@ -77,11 +83,15 @@ python send.py
 
 Make sure to configure your webhook URL and keys appropriately in the script or via environment variables (future version).
 
-## 🖧 Realme Server Response Codes Explained
+## 🖧
+
+## Realme Server Response Codes Explained
 
 When submitting your unlock request or parsing `bl.txt` output, you may encounter server responses like the following:
 
-### 🔁 Code `-1008`
+### 🔁
+
+### Code `-1008`
 
 ```json
 {"code": -1008, "message": "未提交申请，请先提交解锁申请"}
@@ -96,7 +106,9 @@ Make sure you have submitted your unlock application in the **Deeptest GT5 app**
 
 ---
 
-### ⛔ Code `-1003`
+### ⛔ 
+
+### Code `-1003`
 
 ```json
 {"code": -1003, "message": "申请不成功，30天内不能重复申请"}
@@ -110,7 +122,9 @@ Wait 30 days or use a **different HeyTap account** to retry the unlock process.
 
 ---
 
-### ✅ Code `200` – Success
+### ✅ 
+
+### Code `200` – Success
 
 ```json
 {"code": 200, "message": "SUCCESS", "data": {"unlockCode": "your-unlock-key"}}
@@ -130,7 +144,9 @@ to complete the unlock process.
 
 ---
 
-### 🕒 Timestamp-Based Unlock Window
+### 🕒
+
+### Timestamp-Based Unlock Window
 
 Some server responses may contain a **UNIX timestamp**, indicating when the device is eligible for unlocking.
 
@@ -138,11 +154,15 @@ Some server responses may contain a **UNIX timestamp**, indicating when the devi
 This marks the expected time after which the bootloader can be safely unlocked.  
 Use tools like [unixtimestamp.com](https://www.unixtimestamp.com/) to convert it to a human-readable format.
 
-## 🔐 Security Note
+## 🔐
+
+## Security Note
 
 Always handle bootloader unlock keys with care. Consider storing them securely and never share them publicly. Unlocking your device may void the warranty and disable certain security features.
 
-## 🧠 Reference
+## 🧠
+
+## Reference
 
 Based on:
 - [FRP Unlocking](https://frpunlocking.com)
