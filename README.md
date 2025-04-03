@@ -9,7 +9,7 @@ Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](h
 - [🔓 Realme Bootloader Unlock Toolkit](#realme-bootloader-unlock-toolkit)
 - [🛠 Requirements](#requirements)
   - [Virtual Environment (Recommended)](#virtual-environment-recommended)
-- [🚀 Usage](#️usage)
+- [🚀 Usage](#usage)
 - [🖧 Realme Server Response Codes Explained](#realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
