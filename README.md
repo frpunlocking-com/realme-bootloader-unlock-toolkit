@@ -10,13 +10,13 @@ Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](h
 - [🛠 Requirements](#requirements)
   - [Virtual Environment (Recommended)](#virtual-environment-recommended)
 - [🚀 Usage](#️usage)
-- [🖧 Realme Server Response Codes Explained](#️realme-server-response-codes-explained)
+- [🖧 Realme Server Response Codes Explained](#realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
-  - [Code 200 - Success](##code-200--success)
+  - [Code 200 - Success](#code-200--success)
   - [Timestamp-Based Outpot](#timestamp-based-outpot)
-- [🔐 Security Note](#️-security-note)
-- [🧠 Reference](#️-reference)
+- [🔐 Security Note](#security-note)
+- [🧠 Reference](#reference)
 
 ## 🛠
 
