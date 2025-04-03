@@ -99,7 +99,8 @@ The error message you've encountered:
 
 ```json
 复制
-{"code":-1003,"message":"申请不成功，30天内不能重复申请"}```
+{"code":-1003,"message":"申请不成功，30天内不能重复申请"}
+```
 
 translates to: "Application unsuccessful; cannot reapply within 30 days."
 
@@ -111,7 +112,7 @@ Resolution: change HeyTap account or make new one.
 Decoded response: {"code":200,"message":"SUCCESS","data":{"unlockCode":"lot-of-chars"}}
 ```
 
-On unlockCode there was receivied an unlock bootloader code.
+On `nlockCode` there was receivied an unlock bootloader code.
 
 ### Reply with timestamp
 
