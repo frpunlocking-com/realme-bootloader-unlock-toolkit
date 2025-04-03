@@ -13,7 +13,7 @@ Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](h
 - [🖧 Realme Server Response Codes Explained](#️realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
-  - [Code 200 - Success](#code--200-Success)
+  - [Code 200 - Success](##code-200--success)
   - [Timestamp-Based Outpot](#timestamp-based-outpot)
 - [🔐 Security Note](#️-security-note)
 - [🧠 Reference](#️-reference)
