@@ -1,12 +1,12 @@
-# Realme Bootloader Unlock Toolkit to save unlock key
+# Realme Bootloader Unlock Toolkit
 
 ## 🔓
 
-Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](https://frpunlocking.com).
+Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](https://frpunlocking.com). This tool is needed to get the Unlock key from Realme servers and save it for later use.
 
 ## 📚 Table of Contents
 
-- [🔓 Realme Bootloader Unlock Toolkit to save unlock key](#️realme-bootloader-unlock-toolkit-to-save-unlock-key)
+- [🔓 Realme Bootloader Unlock Toolkit](#️realme-bootloader-unlock-toolkit)
 - [🛠 Requirements](#️requirements)
   - [Virtual Environment (Recommended)](#virtual-environment-recommended)
 - [🚀 Usage](#️usage)
