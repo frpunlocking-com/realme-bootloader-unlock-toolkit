@@ -1,24 +1,20 @@
 # Realme Bootloader Unlock Toolkit
 
-## 🔓
-
 Visit the project page for DIY unlocking and tools: [https://frpunlocking.com](https://frpunlocking.com). This tool is needed to get the Unlock key from Realme servers and save it for later use.
 
-## 📚 Table of Contents
+## Table of Contents
 
-- [🔓 Realme Bootloader Unlock Toolkit](#realme-bootloader-unlock-toolkit)
-- [🛠 Requirements](#requirements)
+- [Realme Bootloader Unlock Toolkit](#realme-bootloader-unlock-toolkit)
+- [Requirements](#requirements)
   - [Virtual Environment (Recommended)](#virtual-environment-recommended)
-- [🚀 Usage](#usage)
-- [🖧 Realme Server Response Codes Explained](#realme-server-response-codes-explained)
+- [Usage](#usage)
+- [Realme Server Response Codes Explained](#realme-server-response-codes-explained)
   - [Code -1008](#code--1008)
   - [Code -1003](#code--1003)
   - [Code 200 - Success](#code-200--success)
   - [Timestamp-Based Outpot](#timestamp-based-outpot)
-- [🔐 Security Note](#security-note)
-- [🧠 Reference](#reference)
-
-## 🛠
+- [Security Note](#security-note)
+- [Reference](#reference)
 
 ## Requirements
 
@@ -89,8 +85,6 @@ Make sure to configure your webhook URL and keys appropriately in the script or 
 
 When submitting your unlock request or parsing `bl.txt` output, you may encounter server responses like the following:
 
-### 🔁
-
 ### Code `-1008`
 
 ```json
@@ -106,8 +100,6 @@ Make sure you have submitted your unlock application in the **Deeptest GT5 app**
 
 ---
 
-### ⛔ 
-
 ### Code `-1003`
 
 ```json
@@ -121,8 +113,6 @@ Make sure you have submitted your unlock application in the **Deeptest GT5 app**
 Wait 30 days or use a **different HeyTap account** to retry the unlock process.
 
 ---
-
-### ✅ 
 
 ### Code `200` – Success
 
@@ -154,13 +144,16 @@ Some server responses may contain a **UNIX timestamp**, indicating when the devi
 This marks the expected time after which the bootloader can be safely unlocked.  
 Use tools like [unixtimestamp.com](https://www.unixtimestamp.com/) to convert it to a human-readable format.
 
-## 🔐
-
 ## Security Note
 
 Always handle bootloader unlock keys with care. Consider storing them securely and never share them publicly. Unlocking your device may void the warranty and disable certain security features.
 
-## 🧠
+## Warranty & Liability Disclaimer
+
+Are you device owner and... your warranty is still valid?
+
+I am not responsible if you brick your device, kill your SD card, install viruses, burn the battery, trigger thermonuclear war, or lose your job because the alarm app failed. Please research any features included in this software **before flashing it! You must be the rightful owner of the device you are modifying and have the legal right to alter its software.**. You are choosing to make these strong modifications on your device, and if you point the finger at me for messing up your device, I will laugh at you.
+
 
 ## Reference
 
