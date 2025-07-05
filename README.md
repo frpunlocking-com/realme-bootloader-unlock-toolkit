@@ -61,8 +61,6 @@ python send.py
 
 This way, your dependencies remain isolated to that specific virtual environment, and you don’t need to manually insert paths.
 
-## 🚀
-
 ## Usage
 
 After capturing the ADB log output (`bl.txt`) when apply with [Realme Deeptest GT5 APK](https://frpunlocking.com/diy-unlock/realme-bootloader-unlock/) using:
@@ -79,7 +77,13 @@ python send.py
 
 Make sure to configure your webhook URL and keys appropriately in the script or via environment variables (future version).
 
-## 🖧
+## Warranty & Liability Disclaimer  
+
+I am not responsible if you brick your device, erase data, kill your SD card, install malware, burn the battery, trigger thermonuclear war, or get fired because an alarm app failed.  
+**You must be the rightful owner of the device you are modifying and have the legal right to alter its software.**  
+
+All guides, binaries, and source code are provided **“AS IS,” without any express or implied warranty.** You apply them at your own risk. If you blame me for messing up your device, I will laugh at you.  
+For the full terms, see our **[Legal Notice](https://frpunlocking.com/legal)**.
 
 ## Realme Server Response Codes Explained
 
@@ -96,7 +100,7 @@ When submitting your unlock request or parsing `bl.txt` output, you may encounte
 
 **Resolution:**  
 Make sure you have submitted your unlock application in the **Deeptest GT5 app** and generated logs via ADB.  
-👉 [See full guide here](https://frpunlocking.com/how-to-unlock-bootloader-of-a-realme-device/)
+> [See full guide here](https://frpunlocking.com/how-to-unlock-bootloader-of-a-realme-device/)
 
 ---
 
@@ -147,13 +151,6 @@ Use tools like [unixtimestamp.com](https://www.unixtimestamp.com/) to convert it
 ## Security Note
 
 Always handle bootloader unlock keys with care. Consider storing them securely and never share them publicly. Unlocking your device may void the warranty and disable certain security features.
-
-## Warranty & Liability Disclaimer
-
-Are you device owner and... your warranty is still valid?
-
-I am not responsible if you brick your device, kill your SD card, install viruses, burn the battery, trigger thermonuclear war, or lose your job because the alarm app failed. Please research any features included in this software **before flashing it! You must be the rightful owner of the device you are modifying and have the legal right to alter its software.**. You are choosing to make these strong modifications on your device, and if you point the finger at me for messing up your device, I will laugh at you.
-
 
 ## Reference
 
